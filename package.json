@@ -1,0 +1,30 @@
+{
+  "name": "vue-npm-starter",
+  "version": "1.0.0",
+  "description": "A very basic Vue npm project setup, only containing what's really needed.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch"
+  },
+  "author": "Marvin Blum",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.5.14",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "style-loader": "^0.20.3",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.14",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
+  }
+}
