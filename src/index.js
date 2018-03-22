@@ -20,12 +20,35 @@ axios.interceptors.request.use((config) => {
 	return Promise.reject(err);
 });
 
+// storage
+// ...
+
+// router
 const routes = [
 	{path: "/", component: pages.Home},
 	{path: "*", component: pages.Home} // TODO 404
 ];
 
+let router = new VueRouter({routes, mode: "history"});
+
+// router interceptor to check token for protected pages
+router.beforeEach((to, from, next) => {
+	if(to.meta.protected){
+		axios.get("http://localhost/auth/token") // TODO
+		.then((r) => {
+			next();
+		})
+		.catch((e) => {
+			next("/");
+		});
+	}
+	else{
+		next();
+	}
+});
+
+// main component
 new Vue({
 	el: "#app",
-	router: new VueRouter({routes, mode: "history"})
+	router
 });
