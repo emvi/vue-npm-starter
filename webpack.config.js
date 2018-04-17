@@ -25,5 +25,8 @@ module.exports = {
 		alias: {
 			vue: 'vue/dist/vue.js'
 		}
+	},
+	watchOptions: {
+		poll: true
 	}
 }
