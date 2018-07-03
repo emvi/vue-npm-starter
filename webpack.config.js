@@ -1,3 +1,5 @@
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
+
 module.exports = {
 	mode: 'development',
 	entry: './src/index.js',
@@ -36,5 +38,8 @@ module.exports = {
 	},
 	watchOptions: {
 		poll: true
-	}
+	},
+	plugins: [
+		new VueLoaderPlugin()
+	]
 }
