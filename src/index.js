@@ -8,6 +8,8 @@ import * as pages from "./pages";
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
+Vue.config.productionTip = false;
+Vue.config.devtools = false;
 
 // reponse error handler
 axios.interceptors.response.use(undefined, err => {
@@ -37,7 +39,7 @@ axios.interceptors.request.use((config) => {
 // router
 const routes = [
 	{path: "/", component: pages.Home},
-	{path: "*", component: pages.Home} // TODO 404
+	{path: "*", component: pages.Error404}
 ];
 
 let router = new VueRouter({routes, mode: "history"});
@@ -45,7 +47,7 @@ let router = new VueRouter({routes, mode: "history"});
 // router interceptor to check token for protected pages
 router.beforeEach((to, from, next) => {
 	if(to.meta.protected){
-		axios.get("http://localhost/auth/token") // TODO
+		axios.get("http://localhost/auth/token")
 		.then((r) => {
 			next();
 		})
