@@ -5,14 +5,13 @@ This repository contains a very basic Vue npm project. It can be used as a start
 ## Build
 
 ```
-# build:
+# build for production:
 npm run build
 
-# development (watch) mode:
+# build for development (auto build when files change):
 npm run dev
 ```
 
 ## License
 
 MIT
-
