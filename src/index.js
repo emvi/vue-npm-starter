@@ -9,6 +9,15 @@ import * as pages from "./pages";
 Vue.use(VueRouter);
 Vue.use(Vuex);
 
+// reponse error handler
+axios.interceptors.response.use(undefined, err => {
+	if(err.response.data.error){
+		console.log(err.response.data.error);
+	}
+	
+	return Promise.reject(err);
+});
+
 // token interceptor for every request
 axios.interceptors.request.use((config) => {
 	const token = window.localStorage.getItem("token");
