@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<mainmenu></mainmenu>
-		Home
+		<h1>{{$t("welcome")}}</h1>
 	</div>
 </template>
 
@@ -21,3 +21,11 @@ html, body{
 	padding: 20px;
 }
 </style>
+
+<i18n>
+{
+	"en": {
+		"welcome": "Welcome!"
+	}
+}
+</i18n>

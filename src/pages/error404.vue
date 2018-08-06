@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<mainmenu></mainmenu>
-		#404
+		<h1>{{$t("message")}}</h1>
 	</div>
 </template>
 
@@ -21,3 +21,11 @@ html, body{
 	padding: 20px;
 }
 </style>
+
+<i18n>
+{
+	"en": {
+		"message": "#404 Page not found"
+	}
+}
+</i18n>

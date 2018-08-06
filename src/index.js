@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Vuex from "vuex";
+import VueI18n from "vue-i18n";
 import axios from "axios";
 
 import "../static/main.scss";
@@ -8,6 +9,7 @@ import * as pages from "./pages";
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
+Vue.use(VueI18n);
 Vue.config.productionTip = false;
 Vue.config.devtools = false;
 
@@ -60,8 +62,15 @@ router.beforeEach((to, from, next) => {
 	}
 });
 
+// i18n
+const i18n = new VueI18n({
+	locale: "en",
+	fallbackLocale: "en"
+});
+
 // main component
 new Vue({
 	el: "#app",
-	router
+	router,
+	i18n
 });

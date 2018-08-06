@@ -22,6 +22,10 @@ module.exports = {
 				}
 			},
 			{
+				resourceQuery: /blockType=i18n/,
+				loader: '@kazupon/vue-i18n-loader'
+			},
+			{
 				test: /\.css$/,
 				use: [
 					'vue-style-loader',
