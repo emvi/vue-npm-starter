@@ -1,6 +1,14 @@
 # vue-npm-starter
 
-This repository contains a very basic Vue npm project. It can be used as a starting point for new projects or as documentation. There is no server included, to view it, serve dist/build.js, static/ and the index.html.
+This repository contains a very basic Vue npm project. It can be used as a starting point for new projects.
+
+## Run
+
+To start a local development server, run the following command:
+
+```
+npm start
+```
 
 ## Build
 
@@ -8,10 +16,11 @@ This repository contains a very basic Vue npm project. It can be used as a start
 # build for production:
 npm run build
 
-# build for development (auto build when files change):
+# build for development (auto rebuild when files change):
 npm run dev
 ```
 
 ## License
 
 MIT
+

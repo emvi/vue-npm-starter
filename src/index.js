@@ -5,6 +5,7 @@ import VueI18n from "vue-i18n";
 import axios from "axios";
 
 import "../static/main.scss";
+import NewStore from "./store/store.js";
 import * as pages from "./pages";
 
 Vue.use(VueRouter);
@@ -34,9 +35,6 @@ axios.interceptors.request.use((config) => {
 }, (err) => {
 	return Promise.reject(err);
 });
-
-// storage
-// ...
 
 // router
 const routes = [
@@ -71,6 +69,7 @@ const i18n = new VueI18n({
 // main component
 new Vue({
 	el: "#app",
+	store: NewStore(),
 	router,
 	i18n
 });
