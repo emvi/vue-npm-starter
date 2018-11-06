@@ -5,7 +5,8 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		path: __dirname+'/dist',
-		filename: 'build.js'
+		filename: 'build.js',
+		publicPath: 'dist'
 	},
 	module: {
 		rules: [
