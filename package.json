@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --mode=production",
-    "dev": "webpack --watch"
+    "dev": "webpack --watch",
+    "test": "mocha --require @babel/register test/**/*.js"
   },
   "author": "Author",
   "license": "ISC",
@@ -23,10 +24,12 @@
     "@babel/plugin-proposal-function-bind": "^7.2.0",
     "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
     "@babel/runtime": "^7.5.5",
     "@kazupon/vue-i18n-loader": "^0.4.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
+    "mocha": "^6.2.0",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^1.0.0",
