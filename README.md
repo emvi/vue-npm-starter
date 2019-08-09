@@ -20,6 +20,14 @@ npm run build
 npm run dev
 ```
 
+## Test
+
+To (recursivly) execute all tests in `/test` run:
+
+```
+npm test
+```
+
 ## License
 
 MIT
