@@ -13,7 +13,7 @@ npm start
 ## Build
 
 ```
-# build for production:
+# build for production (js and styling):
 npm run build
 
 # build for development (auto rebuild when files change):
