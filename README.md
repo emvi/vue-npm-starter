@@ -1,6 +1,6 @@
 # vue-npm-starter
 
-<a href="https://discord.gg/5UWdRh"><img src="https://img.shields.io/discord/739184135649886288?logo=discord" alt="Chat on Discord"></a>
+<a href="https://discord.gg/fAYm4Cz"><img src="https://img.shields.io/discord/739184135649886288?logo=discord" alt="Chat on Discord"></a>
 
 This repository contains a very basic Vue npm project. It can be used as a starting point for new projects.
 
